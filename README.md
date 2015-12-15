@@ -5,9 +5,6 @@ This repository contains example Sentry integrations using
 [`raven-java`][raven-java] for a variety of different JVM-based libraries and
 frameworks.
 
-integrations for a variety of different
-JVM-based libraries and frameworks.
-
 Many of the examples can be installed, compiled and run with [Maven][maven]:
 
     mvn install compile exec:java
