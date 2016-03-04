@@ -6,7 +6,7 @@
     </encoder>
   </appender>
 
-  <appender name="Sentry" class="net.kencochrane.raven.logback.SentryAppender">
+  <appender name="Sentry" class="com.getsentry.raven.logback.SentryAppender">
   </appender>
 
   <root level="debug">

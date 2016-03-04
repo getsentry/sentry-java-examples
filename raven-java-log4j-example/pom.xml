@@ -13,12 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <logback.version>1.1.2</logback.version>
-    <raven.version>6.0.0</raven.version>
+    <raven.version>7.0.0</raven.version>
   </properties>
 
   <dependencies>
     <dependency>
-        <groupId>net.kencochrane.raven</groupId>
+        <groupId>com.getsentry.raven</groupId>
         <artifactId>raven-log4j</artifactId>
         <version>${raven.version}</version>
     </dependency>
