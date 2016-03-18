@@ -39,6 +39,7 @@
         </executions>
         <configuration>
           <mainClass>com.getsentry.example.Application</mainClass>
+          <cleanupDaemonThreads>false</cleanupDaemonThreads>
         </configuration>
       </plugin>
     </plugins>
