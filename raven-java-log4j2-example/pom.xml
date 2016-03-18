@@ -12,15 +12,20 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <logback.version>1.1.2</logback.version>
     <raven.version>7.0.0</raven.version>
+    <slf4j.version>1.7.19</slf4j.version>
   </properties>
 
   <dependencies>
     <dependency>
-        <groupId>com.getsentry.raven</groupId>
-        <artifactId>raven-log4j2</artifactId>
-        <version>${raven.version}</version>
+      <groupId>com.getsentry.raven</groupId>
+      <artifactId>raven-log4j2</artifactId>
+      <version>${raven.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
   </dependencies>
 
