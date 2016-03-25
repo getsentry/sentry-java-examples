@@ -3,5 +3,5 @@
   :dependencies [
     [org.clojure/clojure "1.7.0"]
     [org.clojure/tools.logging "0.3.1"]
-    [com.getsentry.raven/raven-logback "7.0.0"]]
+    [com.getsentry.raven/raven-logback "7.1.0"]]
   :main raven-clojure-example.core)
