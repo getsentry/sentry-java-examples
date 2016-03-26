@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <raven.version>7.1.0</raven.version>
+    <slf4j.version>1.7.19</slf4j.version>
   </properties>
 
   <dependencies>
@@ -20,6 +21,11 @@
         <groupId>com.getsentry.raven</groupId>
         <artifactId>raven-log4j</artifactId>
         <version>${raven.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
   </dependencies>
 
