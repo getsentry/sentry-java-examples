@@ -41,7 +41,7 @@ dependencyManagement {
 }
 
 dependencies {
-    compile "com.getsentry.raven:raven-logback:7.1.0" // Sentry's (Raven) only dependency
+    compile "com.getsentry.raven:raven-logback:7.2.1" // Sentry's (Raven) only dependency
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

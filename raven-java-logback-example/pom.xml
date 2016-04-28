@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <raven.version>7.1.0</raven.version>
+    <raven.version>7.2.1</raven.version>
   </properties>
 
   <dependencies>
