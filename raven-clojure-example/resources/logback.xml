@@ -7,14 +7,15 @@
   </appender>
 
   <appender name="Sentry" class="com.getsentry.raven.logback.SentryAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>WARN</level>
+    </filter>
   </appender>
 
   <root level="debug">
     <appender-ref ref="console" />
-  </root>
-
-  <root level="warn">
     <appender-ref ref="Sentry"/>
   </root>
 
 </configuration>
+

@@ -8,6 +8,10 @@ class HelloController {
     Logger log = LoggerFactory.getLogger(getClass())
 
     def index() {
+        log.debug("Debug message")
+        log.info("Info message")
+        log.warn("Warn message")
+
         try {
             1 / 0
         } catch (Exception e) {

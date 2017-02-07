@@ -1,3 +1,4 @@
+import ch.qos.logback.classic.filter.ThresholdFilter
 import com.getsentry.raven.logback.SentryAppender
 import grails.util.BuildSettings
 import grails.util.Environment
@@ -9,10 +10,14 @@ appender('STDOUT', ConsoleAppender) {
     }
 }
 
-root(ERROR, ['STDOUT'])
+// Register the Sentry appender
+appender('Sentry', SentryAppender) {
+    filter(ThresholdFilter) {
+        level = 'WARN'
+    }
+}
 
-appender('Sentry', SentryAppender) // Register the Sentry appender
-root(WARN, ['Sentry']) // Send WARN and above to Sentry
+root(DEBUG, ['STDOUT', 'Sentry'])
 
 def targetDir = BuildSettings.TARGET_DIR
 if (Environment.isDevelopmentMode() && targetDir) {

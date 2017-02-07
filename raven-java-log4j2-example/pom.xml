@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <raven.version>7.3.0</raven.version>
-    <slf4j.version>1.7.19</slf4j.version>
+    <raven.version>7.8.1</raven.version>
+    <slf4j.version>1.7.22</slf4j.version>
   </properties>
 
   <dependencies>

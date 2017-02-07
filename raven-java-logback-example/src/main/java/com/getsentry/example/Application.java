@@ -9,6 +9,10 @@ public class Application
 
     public static void main(String[] args)
     {
+        logger.debug("Debug message");
+        logger.info("Info message");
+        logger.warn("Warn message");
+
         try {
             int example = 1 / 0;
         } catch (Exception e) {
