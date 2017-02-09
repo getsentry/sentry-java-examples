@@ -41,7 +41,7 @@ dependencyManagement {
 }
 
 dependencies {
-    compile "com.getsentry.raven:raven-logback:7.8.1"
+    compile "com.getsentry.raven:raven-logback:7.8.2"
     compile "ch.qos.logback:logback-core:1.1.3"
     compile "ch.qos.logback:logback-classic:1.1.3"
 
