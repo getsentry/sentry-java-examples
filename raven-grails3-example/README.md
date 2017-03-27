@@ -8,7 +8,7 @@ to sentry.
 The example application can be started as follows (set `SENTRY_DSN` to a
 proper value):
 
-    SENTRY_DSN=https://public:private@host:port/1 grails run-app
+    SENTRY_DSN="https://public:private@host:port/1" grails run-app
     
 Now, visit `http://localhost:8080/hello/index` in your browser and an
 `ERROR` message should be sent to the Sentry server you point to in your 
