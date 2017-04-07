@@ -1,5 +1,6 @@
 package com.getsentry.raven_android_example;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.getsentry.raven.android.Raven;
+import com.getsentry.raven.event.BreadcrumbBuilder;
+import com.getsentry.raven.event.Breadcrumbs;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,8 +19,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Context ctx = this.getApplicationContext();
+        // Use the Sentry DSN (client key) from the Project Settings page on Sentry
+        String sentryDsn = "https://publicKey:secretKey@host:port/1?options";
+
         // Initialize the Raven client
-        Raven.init(this.getApplicationContext());
+        Raven.init(ctx, sentryDsn);
+
+        // Record a breadcrumb that will be sent with the next event(s)
+        Breadcrumbs.record(
+                new BreadcrumbBuilder().setMessage("User made an action").build()
+        );
 
         // Manually catch and send an exception
         try {
