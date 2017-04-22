@@ -17,7 +17,7 @@ variable:
 To use a specific Sentry version such a `SNAPSHOT` release, provide the
 `sentry.version` property to the Maven invocation:
 
-    mvn -Dsentry.version=6.0.1-SNAPSHOT exec:java
+    mvn -Dsentry.version=1.0.0-SNAPSHOT exec:java
 
 [maven]: http://maven.apache.org/
 [sentry-java]: https://github.com/getsentry/sentry-java
