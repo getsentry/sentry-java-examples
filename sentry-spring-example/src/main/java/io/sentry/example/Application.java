@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @EnableAutoConfiguration
 @SpringBootApplication
 public class Application {
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger("example.Application");
 
     @RequestMapping("/")
     @ResponseBody
