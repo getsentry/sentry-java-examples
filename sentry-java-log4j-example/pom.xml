@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.getsentry</groupId>
+  <groupId>io.sentry</groupId>
   <artifactId>sentry-java-log4j-example</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>sentry-java-log4j-example</name>
-  <url>https://github.com/getsentry/sentry-java-examples</url>
+  <url>https://github.io.sentry/sentry-java-examples</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,7 +43,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>com.getsentry.example.Application</mainClass>
+          <mainClass>io.sentry.example.Application</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
         </configuration>
       </plugin>

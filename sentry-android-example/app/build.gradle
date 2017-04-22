@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.getsentry.sentry_android_example"
+        applicationId "io.sentry.sentry_android_example"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1

@@ -1,4 +1,4 @@
-package com.getsentry.sentry_android_example;
+package io.sentry.sentry_android_example;
 
 import org.junit.Test;
 

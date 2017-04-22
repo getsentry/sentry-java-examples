@@ -1,4 +1,4 @@
-package com.getsentry.example;
+package io.sentry.example;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

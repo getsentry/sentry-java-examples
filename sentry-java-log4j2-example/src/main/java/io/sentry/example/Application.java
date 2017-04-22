@@ -1,4 +1,4 @@
-package com.getsentry.example;
+package io.sentry.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
