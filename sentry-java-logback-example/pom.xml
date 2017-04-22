@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
 
   <name>sentry-java-logback-example</name>
-  <url>https://github.io.sentry/sentry-java-examples</url>
+  <url>https://github.com/getsentry/sentry-java-examples</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
