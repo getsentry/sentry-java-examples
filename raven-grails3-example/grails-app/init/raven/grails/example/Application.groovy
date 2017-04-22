@@ -1,4 +1,4 @@
-package raven.grails.example
+package sentry.grails.example
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

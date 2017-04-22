@@ -1,4 +1,4 @@
-package com.getsentry.raven_android_example;
+package com.getsentry.sentry_android_example;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.getsentry.raven.android.Raven;
-import com.getsentry.raven.event.BreadcrumbBuilder;
-import com.getsentry.raven.event.Breadcrumbs;
+import io.sentry.android.Sentry;
+import io.sentry.event.BreadcrumbBuilder;
+import io.sentry.event.Breadcrumbs;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         // Use the Sentry DSN (client key) from the Project Settings page on Sentry
         String sentryDsn = "https://publicKey:secretKey@host:port/1?options";
 
-        // Initialize the Raven client
-        Raven.init(ctx, sentryDsn);
+        // Initialize the Sentry client
+        Sentry.init(ctx, sentryDsn);
 
         // Record a breadcrumb that will be sent with the next event(s)
         Breadcrumbs.record(
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             int x = 1 / 0;
         } catch (Exception e) {
-            Raven.capture(e);
+            Sentry.capture(e);
         }
 
         setContentView(R.layout.activity_main);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Clicking this will throw an unhandled exception that Raven will send to the Sentry server
+                // Clicking this will throw an unhandled exception that Sentry will send to the Sentry server
                 throw new RuntimeException("Button press caused an exception!");
             }
         });

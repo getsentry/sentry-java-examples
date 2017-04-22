@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.getsentry.example</groupId>
-	<artifactId>raven-spring-example</artifactId>
+	<artifactId>sentry-spring-example</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
@@ -26,9 +26,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.getsentry.raven</groupId>
-			<artifactId>raven-logback</artifactId>
-			<version>8.0.0</version>
+			<groupId>io.sentry</groupId>
+			<artifactId>sentry-logback</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>

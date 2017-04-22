@@ -50,7 +50,7 @@ environments:
 grails:
     profile: web
     codegen:
-        defaultPackage: raven.grails.example
+        defaultPackage: sentry.grails.example
     spring:
         transactionManagement:
             proxies: false

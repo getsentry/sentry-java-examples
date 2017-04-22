@@ -1,4 +1,4 @@
-(ns raven-clojure-example.core
+(ns sentry-clojure-example.core
   (:require [clojure.tools.logging :as log]))
 
 (defn -main [& args]

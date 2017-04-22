@@ -3,23 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.getsentry</groupId>
-  <artifactId>raven-java-jul-example</artifactId>
+  <artifactId>sentry-java-jul-example</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>raven-java-jul-example</name>
-  <url>https://github.com/getsentry/raven-java-examples</url>
+  <name>sentry-java-jul-example</name>
+  <url>https://github.com/getsentry/sentry-java-examples</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <raven.version>8.0.0</raven.version>
+    <sentry.version>1.0.0-SNAPSHOT</sentry.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.getsentry.raven</groupId>
-      <artifactId>raven</artifactId>
-      <version>${raven.version}</version>
+      <groupId>io.sentry</groupId>
+      <artifactId>sentry</artifactId>
+      <version>${sentry.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>

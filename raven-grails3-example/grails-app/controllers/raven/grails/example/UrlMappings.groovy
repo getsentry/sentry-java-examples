@@ -1,4 +1,4 @@
-package raven.grails.example
+package sentry.grails.example
 
 class UrlMappings {
 

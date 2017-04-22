@@ -1,5 +1,5 @@
 import ch.qos.logback.classic.filter.ThresholdFilter
-import com.getsentry.raven.logback.SentryAppender
+import io.sentry.logback.SentryAppender
 import grails.util.BuildSettings
 import grails.util.Environment
 

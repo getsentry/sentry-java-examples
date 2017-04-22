@@ -1,4 +1,4 @@
-# Raven java.util.logging Example
+# Sentry java.util.logging Example
 
 This project contains an example Sentry integration with `java.util.logging`.
 
@@ -13,5 +13,5 @@ dependencies that may be run directly via `java`.
     SENTRY_DSN="https://public:private@host:port/1" \
     java \
     -Djava.util.logging.config.file=src/main/resources/logging.properties \
-    -cp ./target/raven-java-jul-example-1.0-SNAPSHOT-jar-with-dependencies.jar \
+    -cp ./target/sentry-java-jul-example-1.0-SNAPSHOT-jar-with-dependencies.jar \
     com.getsentry.example.Application

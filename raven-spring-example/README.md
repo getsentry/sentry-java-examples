@@ -1,4 +1,4 @@
-Raven Spring Boot Example
+Sentry Spring Boot Example
 =========================
 
 This project contains an example Sentry integration with Spring Boot. It uses
@@ -14,7 +14,7 @@ Now, visit `http://localhost:8080/` in your browser and a `WARN` and
 `ERROR` message should be sent to the Sentry server you point to in your 
 `SENTRY_DSN`.
 
-See [src/main/resources/logback.xml](https://github.com/getsentry/raven-java-examples/blob/master/raven-spring-example/src/main/resources/logback.xml)
+See [src/main/resources/logback.xml](https://github.com/getsentry/sentry-java-examples/blob/master/sentry-spring-example/src/main/resources/logback.xml)
 for example logger configuration and
-[pom.xml](https://github.com/getsentry/raven-java-examples/blob/master/raven-spring-example/pom.xml)
-for the dependency on `com.getsentry.raven:raven-logback`.
+[pom.xml](https://github.com/getsentry/sentry-java-examples/blob/master/sentry-spring-example/pom.xml)
+for the dependency on `io.sentry:sentry-logback`.

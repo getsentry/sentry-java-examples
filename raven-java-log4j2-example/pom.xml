@@ -3,24 +3,24 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.getsentry</groupId>
-  <artifactId>raven-java-log4j2-example</artifactId>
+  <artifactId>sentry-java-log4j2-example</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>raven-java-log4j2-example</name>
-  <url>https://github.com/getsentry/raven-java-examples</url>
+  <name>sentry-java-log4j2-example</name>
+  <url>https://github.com/getsentry/sentry-java-examples</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <raven.version>8.0.0</raven.version>
+    <sentry.version>1.0.0-SNAPSHOT</sentry.version>
     <slf4j.version>1.7.22</slf4j.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.getsentry.raven</groupId>
-      <artifactId>raven-log4j2</artifactId>
-      <version>${raven.version}</version>
+      <groupId>io.sentry</groupId>
+      <artifactId>sentry-log4j2</artifactId>
+      <version>${sentry.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>

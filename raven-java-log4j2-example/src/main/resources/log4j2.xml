@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration status="warn" packages="org.apache.logging.log4j.core,com.getsentry.raven.log4j2">
+<configuration status="warn" packages="org.apache.logging.log4j.core,io.sentry.log4j2">
 
     <appenders>
-        <Raven name="Sentry" />
+        <Sentry name="Sentry" />
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
         </Console>
