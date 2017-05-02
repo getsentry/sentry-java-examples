@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import io.sentry.Sentry;
-import io.sentry.android.SentryAndroid;
+import io.sentry.android.AndroidSentryClientFactory;
 import io.sentry.event.BreadcrumbBuilder;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         String sentryDsn = "https://publicKey:secretKey@host:port/1?options";
 
         // Initialize the Sentry client
-        SentryAndroid.init(ctx, sentryDsn);
+        Sentry.init(sentryDsn, new AndroidSentryClientFactory(ctx));
 
         // Record a breadcrumb that will be sent with the next event(s)
         Sentry.record(
