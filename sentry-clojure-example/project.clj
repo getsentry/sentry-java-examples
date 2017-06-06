@@ -3,5 +3,5 @@
   :dependencies [
     [org.clojure/clojure "1.8.0"]
     [org.clojure/tools.logging "0.3.1"]
-    [io.sentry/sentry-logback "1.0.0-SNAPSHOT"]]
+    [io.sentry/sentry-logback "1.0.0"]]
   :main sentry-clojure-example.core)
