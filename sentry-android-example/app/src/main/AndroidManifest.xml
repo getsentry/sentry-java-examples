@@ -17,16 +17,9 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Another way to set your DSN -->
-        <!--
-        <meta-data
-            android:name="io.sentry.android.DSN"
-            android:value="YOUR_DSN_HERE"/>
-          -->
     </application>
 
 </manifest>
