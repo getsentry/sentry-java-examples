@@ -3,7 +3,7 @@
 
 (def dsn "your dsn")
 
-(sentry/init dsn)
+(sentry/init! dsn)
 
 (defn -main [& args]
   (let [x 1
